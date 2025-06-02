@@ -6,7 +6,7 @@ import './index.css'
 
 import App from './App.jsx'
 
-import { AppContextProvider } from './Context/AppContext'
+import { AppContextProvider } from './Context/AppContext.jsx'
 
 
 createRoot(document.getElementById('root')).render(
