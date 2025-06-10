@@ -7,6 +7,7 @@ import Footer from './Componets/Footer'
 import { useAppContext } from './context/AppContext'
 import Login from './Componets/Login'
 import AllProducts from './Pages/AllProducts'
+import ProductCategory from './Pages/ProductCategory'
 
 const App = () => {
 
@@ -18,13 +19,17 @@ const App = () => {
       {isSellerPath ? null : <Navbar />}
       {showUserLogin ? <Login /> : null}
       <Toaster />
+
+
       <div className={`${isSellerPath ? "" : "px-6 md:px-16 lg:px-24 xl:px-32"}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<AllProducts />} />
+          <Route path='/products/:category' element={<ProductCategory />} />
         </Routes>
 
-      </div>        {!isSellerPath && <Footer />}
+      </div>
+      {!isSellerPath && <Footer />}
 
     </div>
   )
