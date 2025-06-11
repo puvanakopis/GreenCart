@@ -1,19 +1,21 @@
 import React from 'react'
-import MainBanner from '../Componets/MainBanner'
-import Categories from '../Componets/Categories'
-import BestSeller from '../Componets/BestSeller'
-import BottomBanner from '../Componets/BottomBanner'
-import NewsLetter from '../Componets/NewsLetter'
-import Footer from '../Componets/Footer'
+import MainBanner from '../components/MainBanner'
+import Categories from '../components/Categories'
+import BestSeller from '../components/BestSeller'
+import BottomBanner from '../components/BottomBanner'
+import NewsLetter from '../components/NewsLetter'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <div className='mt-10'>
         <MainBanner />
         <Categories />
-        <BestSeller/>
+        <BestSeller />
         <BottomBanner/>
-        <NewsLetter/>
+        <NewsLetter />
+        
+
     </div>
   )
 }
